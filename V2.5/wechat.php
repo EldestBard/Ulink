@@ -29,6 +29,7 @@ if(false == checkSignature()) {
 }
 
 //接入时验证接口
+header('content-type:text');
 $echostr = $_GET ['echostr'];
 if($echostr) {
 	echo $echostr;
